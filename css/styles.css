@@ -1,0 +1,107 @@
+:root {
+    --blue-color: #36c;
+    --gray-border-color: #a2a9b1;
+    --gray-text-color: #54595d;
+    --gray-background-color: #f8f9fa;
+    --font-family-title: 'Linux Libertine', sans-serif;
+    --font-familiy-content: -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: var(--font-familiy-content);
+}
+
+
+/* Header styles */
+
+.wikipedia__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.wikipedia__image-container {
+    width: 57px;
+}
+
+.wikipedia__image {
+    width: 100%;
+}
+
+.wikipedia__title {
+    /* background-color: salmon; */
+    text-align: center;
+}
+
+.title__text {
+    font-size: 2.5rem;
+    font-family: var(--font-family-title);
+    text-transform: uppercase;
+    display: block;
+    font-weight: 500;
+    /* background-color: seagreen; */
+}
+
+.title__text::first-letter,
+.title__text span {
+    font-size: 3.2rem;
+}
+
+.title__slogan {
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: block;
+}
+
+
+/* styles to idioms section */
+
+.wikipedia__idioms {
+    margin-top: 30px;
+    /* background-color: steelblue; */
+}
+
+.idioms__list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 16px;
+}
+
+.idiom__link {
+    text-decoration: none;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: teal; */
+    display: block;
+    text-align: center;
+}
+
+.idiom__name {
+    color: var(--blue-color);
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.idiom__numarticles {
+    color: var(--gray-text-color);
+    display: block;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
