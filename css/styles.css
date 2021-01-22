@@ -105,3 +105,115 @@ body {
     font-size: 1.3rem;
     line-height: 1.4;
 }
+
+
+/* Search bar */
+
+.wikipedia__search {
+    /* background-color: salmon; */
+    margin: 0 10px;
+    margin-bottom: 20px;
+    height: 45px;
+}
+
+.search__form {
+    height: inherit;
+}
+
+.search__bar {
+    border: none;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    height: inherit;
+}
+
+.search__left {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: seagreen; */
+    border: 1px solid var(--gray-border-color);
+    border-radius: 2px 0 0 2px;
+}
+
+.search__input {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 5px 8px;
+    border: none;
+    outline-color: #447FF5;
+}
+
+.search__idiom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: khaki; */
+    padding: 0 10px;
+}
+
+.idiom__select {
+    width: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline-color: transparent;
+    color: var(--gray-text-color);
+}
+
+.idiom__now {
+    font-size: 1.3rem;
+    margin-right: 5px;
+    color: var(--gray-text-color);
+}
+
+.search__button {
+    background-color: #447FF5;
+    margin: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline-color: #447FF5;
+    cursor: pointer;
+}
+
+.lang__button-wrapper {
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+.lang__button {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid var(--gray-border-color);
+    padding: 6px 12px;
+    margin: 0 20px;
+}
+
+.lang__text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--blue-color);
+    margin: 0 1em;
+}
+
+svg {
+    vertical-align: middle;
+}
+
+.wiki__separator {
+    margin: 0 10px;
+}
+
+.wiki__line {
+    width: 25px;
+    height: 0.5px;
+    background-color: var(--gray-border-color);
+}
