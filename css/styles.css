@@ -4,7 +4,7 @@
     --gray-text-color: #54595d;
     --gray-background-color: #f8f9fa;
     --font-family-title: 'Linux Libertine', sans-serif;
-    --font-familiy-content: -apple-system, sans-serif;
+    --font-familiy-content: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 * {
@@ -22,6 +22,10 @@ body {
     font-family: var(--font-familiy-content);
 }
 
+.wikipedia__wrapper {
+    position: relative;
+}
+
 
 /* Header styles */
 
@@ -29,7 +33,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 35px;
+    /* background-color: coral; */
+    /* position: relative; */
 }
 
 .wikipedia__image-container {
@@ -69,7 +75,8 @@ body {
 /* styles to idioms section */
 
 .wikipedia__idioms {
-    margin-top: 30px;
+    margin-top: 7rem;
+    margin-bottom: 4em;
     /* background-color: steelblue; */
 }
 
@@ -77,8 +84,8 @@ body {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin: 0 16px;
+    gap: 35px;
+    margin: 0 20px;
 }
 
 .idiom__link {
@@ -95,7 +102,7 @@ body {
 .idiom__name {
     color: var(--blue-color);
     font-size: 1.4rem;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     display: block;
 }
 
@@ -104,6 +111,7 @@ body {
     display: block;
     font-size: 1.3rem;
     line-height: 1.4;
+    font-family: var(--font-familiy-content);
 }
 
 
@@ -112,12 +120,16 @@ body {
 .wikipedia__search {
     /* background-color: salmon; */
     margin: 0 10px;
-    margin-bottom: 20px;
-    height: 45px;
+    margin-bottom: 80px;
+    height: 78px;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
 }
 
 .search__form {
-    height: inherit;
+    height: 42px;
 }
 
 .search__bar {
@@ -210,10 +222,96 @@ svg {
 
 .wiki__separator {
     margin: 0 10px;
+    margin-bottom: 1em;
 }
 
 .wiki__line {
     width: 25px;
     height: 0.5px;
     background-color: var(--gray-border-color);
+}
+
+
+/* Styles to footer */
+
+.wiki__wikimedia {
+    text-align: center;
+}
+
+.wikimedia__text {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.wiki__things {
+    /* background-color: slateblue; */
+}
+
+.wiki__list {
+    display: grid;
+    grid-gap: 10px 15px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    list-style: none;
+}
+
+.wiki__item {
+    /* background-color: steelblue; */
+    padding: 8px;
+}
+
+.wiki__link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    /* background-color: salmon; */
+}
+
+.wikithing__pic {
+    width: 30%;
+}
+
+.wikithing__text {
+    /* background-color: chocolate; */
+    display: block;
+    width: 70%;
+}
+
+.wikithing__title {
+    color: var(--blue-color);
+    font-size: 1.4rem
+}
+
+.wikithing__description {
+    margin-top: 3px;
+    color: var(--gray-text-color);
+    font-size: 1.3rem;
+}
+
+
+/* App promotion */
+
+.wiki__app {
+    /* background-color: coral; */
+    text-align: center;
+    padding: 0 4px;
+    padding-bottom: 1em;
+}
+
+.wikiapp__info,
+.wikiapp__text {
+    font-size: 1.3rem;
+    color: var(--gray-text-color);
+}
+
+.wikiapp__info {
+    display: inline-block;
+    margin: 2em 0;
+}
+
+.wikiapp__list {
+    margin-top: 1em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
