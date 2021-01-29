@@ -239,8 +239,12 @@ svg {
 }
 
 .wikimedia__text {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0 15px;
     margin-top: 1em;
     margin-bottom: 2em;
+    color: var(--gray-text-color);
 }
 
 .wiki__things {
@@ -314,4 +318,41 @@ svg {
     list-style: none;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+    /* TODO: Parte del buscador */
+    .wikipedia__search {
+        /* background-color: moccasin; */
+        height: 42px;
+        position: initial;
+        margin: 0;
+        margin-bottom: 2.5em;
+    }
+    .search__form {
+        /* background-color: salmon; */
+        width: 80%;
+        margin: 0 auto;
+    }
+    .wikipedia__idioms {
+        margin-top: 2rem;
+        margin-bottom: 2.5em;
+    }
+    /* TODO: Parte del footer */
+    .wiki__things {
+        /* background-color: slateblue; */
+        margin: 0 10px
+    }
+    .wiki__list {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .wiki__app {
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 0 4px;
+        padding-bottom: 1em;
+        margin: 10px 15px;
+    }
 }
