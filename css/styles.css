@@ -253,15 +253,16 @@ svg {
 
 .wiki__list {
     display: grid;
-    grid-gap: 10px 15px;
+    gap: 10px 15px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
 .wiki__item {
     /* background-color: steelblue; */
-    padding: 8px;
+    /* padding: 8px; */
 }
 
 .wiki__link {
@@ -279,6 +280,9 @@ svg {
     /* background-color: chocolate; */
     display: block;
     width: 70%;
+    margin-left: 10px;
+    font-weight: 200;
+    font-family: var(--font-familiy-content);
 }
 
 .wikithing__title {
@@ -305,12 +309,19 @@ svg {
 .wikiapp__info,
 .wikiapp__text {
     font-size: 1.3rem;
+    font-family: var(--font-familiy-content);
+    line-height: 1.5;
     color: var(--gray-text-color);
+}
+
+.wikiapp__text {
+    font-weight: 300;
 }
 
 .wikiapp__info {
     display: inline-block;
     margin: 2em 0;
+    font-weight: bold;
 }
 
 .wikiapp__list {
@@ -345,7 +356,7 @@ svg {
     }
     .wiki__list {
         display: grid;
-        grid-gap: 10px;
+        gap: 23px 10px;
         grid-template-columns: repeat(3, 1fr);
     }
     .wiki__app {
@@ -354,5 +365,55 @@ svg {
         padding: 0 4px;
         padding-bottom: 1em;
         margin: 10px 15px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .wiki__footer {
+        display: grid;
+        grid-template-areas: "wikimedia wikithings" "wikiapp   wikithings" "wikiapp   wikithings";
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 2fr);
+        padding: 15px;
+    }
+    .wiki__wikimedia {
+        text-align: initial;
+        display: flex;
+        justify-content: space-around;
+        grid-area: wikimedia;
+    }
+    .wikimedia__text {
+        margin: 0;
+        padding-left: 1em;
+        line-height: 1.5;
+        font-weight: 300;
+        /* background-color: lawngreen; */
+    }
+    /* To wikithings  */
+    .wiki__things {
+        grid-area: wikithings;
+    }
+    /* To app */
+    .wiki__app {
+        margin: 0;
+        margin-top: 3em;
+        grid-area: wikiapp;
+    }
+    .app__dowload {
+        display: flex;
+    }
+    .wikiapp__description {
+        margin-left: 1em;
+    }
+    .wikiapp__info,
+    .wikiapp__text {
+        margin: 0;
+        text-align: initial;
+    }
+    .wikiapp__info {
+        margin-bottom: 1em;
+    }
+    .wikiapp__list {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
